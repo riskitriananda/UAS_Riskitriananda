@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f9ff;
+    color: #2a2a2a;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4b9cd3;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+.content, .trending {
+    margin: 2.5rem;
+}
+
+.posts, .trending {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.pagination button {
+    background-color: #4b9cd3;
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    margin: 0 6px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.post {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 1rem;
+}
+
+/* Gaya untuk form pada halaman admin */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input[type="text"],
+textarea,
+select {
+    padding: 0.6rem;
+    border: 1px solid #b8c5d3;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #4b9cd3;
+    outline: none;
+}
+
+button {
+    background-color: #357aa8;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4b9cd3;
+}
+
+#message {
+    color: #e74c3c; /* Warna merah untuk pesan error */
+}
